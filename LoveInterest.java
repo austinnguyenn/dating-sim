@@ -16,6 +16,7 @@ public class LoveInterest extends Characters
 		super.setName(name);
 		super.setAge(age);
 		super.setFriendship(0);
+		approachText = ap;
 	}
 	
 	public int changeFriendship(int amount)
