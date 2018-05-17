@@ -1,5 +1,5 @@
 // Austin Nguyen
-// Events 1.0
+// Events 1.1
 // 10/16/18
 
 import java.util.*;
@@ -23,9 +23,15 @@ public abstract class Events
 		key.next();
 	}
 	
-	public ArrayList<String> startScene()
+	public void setScene(ArrayList<String> s, ArrayList<String[]> c, int v)
 	{
-		return scene;
+		scene = s;
+		choices = c;
+	}
+	
+	public String startScene()
+	{
+		return scene.get(0);
 	}
 	
 	public String[] getOptions(int place)
