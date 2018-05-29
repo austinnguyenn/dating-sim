@@ -33,6 +33,7 @@ public class PrintString {
 	private int choice;
 	private String ans = new String("");
 	private ArrayList<String> list = new ArrayList<String>();
+	private JTextField textField;
 
 
 
@@ -45,6 +46,7 @@ public class PrintString {
 			public void run() {
 
 				PrintString w = new PrintString();
+				
 			}
 		});
 	}
@@ -84,7 +86,7 @@ public class PrintString {
 
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setViewportBorder(new LineBorder(new Color(0, 0, 0)));
-		scrollPane.setBounds(0, 517, 700, 91);
+		scrollPane.setBounds(0, 549, 700, 91);
 		ProjectPlaceholdText.getContentPane().add(scrollPane);
 		
 				textArea = new JTextArea();
@@ -93,55 +95,18 @@ public class PrintString {
 
 
 		JLabel label = new JLabel(img);
-		label.setBounds(0, 0, 696, 519);
+		label.setBounds(0, 0, 696, 538);
 		ProjectPlaceholdText.getContentPane().add(label);
 		
-		JButton btn1 = new JButton("Option 1");
-		btn1.setBounds(0, 607, 350, 30);
-		ProjectPlaceholdText.getContentPane().add(btn1);
-		btn1.addActionListener(new ActionListener() {
-
-		    @Override
-		    public void actionPerformed(ActionEvent e) {
-		        ans("\n1");
-		    }
-		});
+		textField = new JTextField();
+		textField.setBounds(0, 644, 611, 20);
+		ProjectPlaceholdText.getContentPane().add(textField);
+		textField.setColumns(10);
 		
-		
-		JButton btn2 = new JButton("Option 2");
-		btn2.setBounds(350, 607, 350, 30);
-		ProjectPlaceholdText.getContentPane().add(btn2);
-		btn2.addActionListener(new ActionListener() {
-
-		    @Override
-		    public void actionPerformed(ActionEvent e) {
-		        ans("\n2");
-		    }
-		});
-		
-		
-		JButton btn3 = new JButton("Option 3");
-		btn3.setBounds(0, 634, 350, 30);
-		ProjectPlaceholdText.getContentPane().add(btn3);
-		btn3.addActionListener(new ActionListener() {
-
-		    @Override
-		    public void actionPerformed(ActionEvent e) {
-		        ans("\n3");
-		    }
-		});
-		
-		
-		JButton btn4 = new JButton("Option 4");
-		btn4.setBounds(350, 634, 350, 30);
-		ProjectPlaceholdText.getContentPane().add(btn4);
-		btn4.addActionListener(new ActionListener() {
-
-		    @Override
-		    public void actionPerformed(ActionEvent e) {
-		        ans("\n4");
-		    }
-		});
+		JButton btnNewButton = new JButton("Enter");
+		btnNewButton.setBounds(611, 643, 89, 23);
+		ProjectPlaceholdText.getContentPane().add(btnNewButton);
+		pic p = new pic(btnNewButton,textField,textArea);
 		
 
 
@@ -182,9 +147,5 @@ public class PrintString {
 	public String getAns()
 	{
 		return list.get(list.size()-1);
-	}
-	public void ans(String a)
-	{
-		textArea.append(a);;
 	}
 }
