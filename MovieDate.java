@@ -74,12 +74,12 @@ public class MovieDate
 					points++;
 					output.append("" + GIRL.getName() + " finally comes out to her window.");
 					output.append(getChoices(p1_RED));
-					if(t.getText().equals("1"))
+					if(g.equals("1"))
 					{
 						output.append("She nods and gestures for you to give her a few more minutes. You nod and wait for a bit. Eventually she comes out. “Sorry I made you wait, but I found these!” " + GIRL.getName() + " pulls out 2 coupons for free popcorn and a drink. You smile. Looks like this won’t be such a drain on your wallet after all. You open the door for her in a gentleman like manner. She grins and gets in."); // Make this longer
 						points++;
 					}
-					else if(t.getText().equals("2"))
+					else if(g.equals("2"))
 					{
 						output.append("She gets the message and pulls out her phone."); // Make this longer
 						points++;
