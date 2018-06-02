@@ -50,6 +50,7 @@ public class PicnicDate
 				if(g.equals("1"))
 				{
 					points--;
+					output.append("An hour later, you’re at the park with " + girl.getName() + ". You lay out the blanket while " + girl.getName() + " takes all the contents out of the basket. She comes across the sandwiches and smiles. “Sandwiches on a picnic are the best. Thanks a billion for buying these.” You smile back at her and continues setting up the area.")
 					Part2Picnic();
 				}
 				else if(g.equals("2"))
