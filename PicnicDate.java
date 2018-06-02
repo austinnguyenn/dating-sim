@@ -190,7 +190,7 @@ public class PicnicDate
 				"You look at the dog for bit longer before you give him back.",
 				"You give him back."};
 
-		output.append("\n\n“Hey, be nice!” " + girl.getName() + " starts petting the dog to calm it down. A few seconds later, the owner catches up to you guys. “Thanks for holding on to him. I just got him and she’s a handful.” he looks kind of shady to you.\n");
+		output.append("\n\n" + girl.getName() + " giggles at the scene. A few seconds later, the owner catches up to you guys. “Thanks for holding on to him. I just got him and she’s a handful.” he looks kind of shady to you.\n");
 		output.append(getChoices(p2_BLUE));
 		b1.addActionListener(new ActionListener()
 		{
